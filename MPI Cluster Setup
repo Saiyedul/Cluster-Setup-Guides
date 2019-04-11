@@ -18,7 +18,7 @@ Assumptions-
 ***********************
 Preprocessing
 ***********************
-1. Install same version of Ubuntu (preferably 14.04 or 16.04) in all the nodes (master and slaves)
+1. Install same version of Ubuntu (preferably 16.04) in all the nodes (master and slaves)
 2. Create a new user with name "mpiuser" on all nodes. Ensure that userID of this user is same in all machines.
 3. Set the hostname of each node as per the assumption (node0, node1, etc)
 
@@ -86,7 +86,7 @@ Install NFS client and SSH server
 		mkdir /home/mpiuser/.ssh
 	
 	Copy master's hosts list into local hosts (/etc/hosts)
-         	127.0.0.1	localhost
+      127.0.0.1	localhost
 			192.168.17.200	node0
 			192.168.17.201	node1
 			192.168.17.202	node2
